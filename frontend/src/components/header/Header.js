@@ -8,8 +8,7 @@ function Header() {
                 <div className='menu-list'>
                     <ul className='menu-list-components'>
                         <ol>Accueil</ol>
-                        <ol>Présentation</ol>
-                        <ol>Nos services</ol>
+                        <ol>Préstations</ol>
                         <ol>Contact</ol>
                     </ul>
                 </div>
