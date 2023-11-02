@@ -12,7 +12,6 @@ function Header() {
                         <ol>Contact</ol>
                     </ul>
                 </div>
-
             </header>
         </div>
     )
