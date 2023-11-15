@@ -34,3 +34,8 @@ header{
     height: 100%;
     background-color: rgb(182, 87, 87);
 }
+
+.contact-title{
+    display: flex;
+    justify-content: center;
+}
