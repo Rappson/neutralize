@@ -46,7 +46,11 @@ function Home() {
             </div>
 
 
-            {/* fiche de contact */}
+            {/* fiche de contact 
+            
+            Pas beau, quelques points à améliorer :
+            -le message */}
+            
             <div className='contact'>
                 <p>Contactez nous :</p>
 
