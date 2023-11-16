@@ -24,6 +24,7 @@ header{
     align-items: center;
 }
 
+/* cards */
 .insect-cards-img {
     width: auto;
     height: 150px;
@@ -31,11 +32,21 @@ header{
 }
 
 .insect-cards-area{
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: rgb(182, 87, 87);
+}
+
+.first-row,.second-row{
+    display: flex;
 }
 
 .contact-title{
     display: flex;
     justify-content: center;
+}
+
+.bloc-image{
+    margin-left: 5px;
 }

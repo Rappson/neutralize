@@ -1,4 +1,7 @@
 import '../../Style/Style.css'
+import ImageWithTitle from './imageWithTitle'
+
+// Les images
 import cafards from '../../Style/images/Cafard.jpg'
 import chenilles from '../../Style/images/Chenille.jpg'
 import fourmis from '../../Style/images/Fourmis.jpg'
@@ -7,43 +10,82 @@ import punaises from '../../Style/images/Punaise.jpg'
 import souris from '../../Style/images/Souris.jpg'
 
 
+
 function Home() {
+    const imagesData = [
+        {
+            id: 1,
+            imageUrl: cafards,
+            altText: "Photo d'un cafard",
+            title: "Les carfards"
+        },
+        {
+            id: 2,
+            imageUrl: chenilles,
+            altText: "Photo d'une chenille",
+            title: "Les chenilles"
+        },
+        {
+            id: 3,
+            imageUrl: fourmis,
+            altText: "Photo d'une fourmis",
+            title: "Les fourmis"
+        },
+        {
+            id: 4,
+            imageUrl: guepes,
+            altText: "Photo d'une guêpe",
+            title: "Les guêpes"
+        },
+        {
+            id: 5,
+            imageUrl: punaises,
+            altText: "Photo d'une punaise",
+            title: "Les punaises"
+        },
+        {
+            id: 6,
+            imageUrl: souris,
+            altText: "Photo d'une souris",
+            title: "Les souris"
+        }
+
+    ]
+
+    // division du tableau en rangée
+    const firstRow = imagesData.slice(0, 3);
+    const secondRow = imagesData.slice(3, 6);
+
     return (
         <div className='home'>
 
             {/* Présentation des services avec images des insectes traités */}
             <div className='insectes'>
-                <p>Nous luttons contre :</p>
+                <h2>Nous luttons contre :</h2>
                 {/* Cards des insectes 
                     Faire les liaisons avec les balises React (Router, link, etc)
                 */}
-
                 <div className='insect-cards-area'>
-                    <a href='?cafard'>
-                        <img className='insect-cards-img cafards' src={cafards} alt="photo de cafard"></img>
-                    </a>
-                    <a href='?chenille'>
-                        <img className='insect-cards-img chenilles' src={chenilles} alt="photo de cafard"></img>
-                    </a>
-
-                    <a href='?fourmis'>
-                        <img className='insect-cards-img fourmis' src={fourmis} alt="photo de cafard"></img>
-                    </a>
-
-                    <br />
-
-                    <a href='?guepes'>
-                        <img className='insect-cards-img guepes' src={guepes} alt="photo de cafard"></img>
-                    </a>
-
-                    <a href='?punaise'>
-                        <img className='insect-cards-img punaises' src={punaises} alt="photo de cafard"></img>
-                    </a>
-
-                    <a href='?souris'>
-                        <img className='insect-cards-img souris' src={souris} alt="photo de cafard"></img>
-                    </a>
+                    <div className='first-row'>
+                        {firstRow.map((image) => (
+                            <ImageWithTitle
+                                key={image.id}
+                                imageUrl={image.imageUrl}
+                                altText={image.altText}
+                                title={image.title} />
+                        ))}
+                    </div>
+                    <div className='second-row'>
+                        {secondRow.map((image) => (
+                            <ImageWithTitle
+                                key={image.id}
+                                imageUrl={image.imageUrl}
+                                altText={image.altText}
+                                title={image.title} />
+                        ))}
+                    </div>
                 </div>
+
             </div>
 
 
@@ -56,7 +98,7 @@ function Home() {
 
             <div className='contact'>
                 <div className="contact-title">
-                    <p>Contactez nous :</p>
+                    <h2>Contactez nous</h2>
                 </div>
 
                 {/* cards de contacts */}
