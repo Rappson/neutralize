@@ -1,10 +1,10 @@
 import '../../Style/Style.css'
-// import cafards from '../../Style/images/Cafard.jpg'
-// import chenilles from '../../Style/images/Chenille.jpg'
-// import fourmis from '../../Style/images/Fourmis.jpg'
-// import guepes from '../../Style/images/Guepes.jpg'
-// import punaises from '../../Style/images/Punaise.jpg'
-// import souris from '../../Style/images/Souris.jpg'
+import cafards from '../../Style/images/Cafard.jpg'
+import chenilles from '../../Style/images/Chenille.jpg'
+import fourmis from '../../Style/images/Fourmis.jpg'
+import guepes from '../../Style/images/Guepes.jpg'
+import punaises from '../../Style/images/Punaise.jpg'
+import souris from '../../Style/images/Souris.jpg'
 
 
 function Home() {
@@ -18,7 +18,7 @@ function Home() {
                     Faire les liaisons avec les balises React (Router, link, etc)
                 */}
 
-                {/* <div className='insect-cards-area'>
+                <div className='insect-cards-area'>
                     <a href='?cafard'>
                         <img className='insect-cards-img cafards' src={cafards} alt="photo de cafard"></img>
                     </a>
@@ -43,7 +43,7 @@ function Home() {
                     <a href='?souris'>
                         <img className='insect-cards-img souris' src={souris} alt="photo de cafard"></img>
                     </a>
-                </div> */}
+                </div>
             </div>
 
 
