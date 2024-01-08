@@ -47,7 +47,7 @@ function Home() {
             id: 6,
             imageUrl: souris,
             altText: "Photo d'une souris",
-            title: "Les souris"
+            title: "Les souris / Rats"
         }
 
     ]
@@ -64,8 +64,23 @@ function Home() {
                 <h2>Nous luttons contre :</h2>
                 {/* Cards des insectes 
                     Faire les liaisons avec les balises React (Router, link, etc)
+
+                    3 premiers :  rats souris / guêpes frelons / punaises 
+                    3 derniers : le restes (à la place de "fourmis" mettre "autres insectes..")
+
+                    clik redirect -> vers une description de la bestiole
                 */}
                 <div className='insect-cards-area'>
+                <div className='second-row'>
+                        {secondRow.map((image) => (
+                            <ImageWithTitle
+                                key={image.id}
+                                imageUrl={image.imageUrl}
+                                altText={image.altText}
+                                title={image.title} />
+                        ))}
+                    </div>
+
                     <div className='first-row'>
                         {firstRow.map((image) => (
                             <ImageWithTitle
@@ -75,25 +90,19 @@ function Home() {
                                 title={image.title} />
                         ))}
                     </div>
-                    <div className='second-row'>
-                        {secondRow.map((image) => (
-                            <ImageWithTitle
-                                key={image.id}
-                                imageUrl={image.imageUrl}
-                                altText={image.altText}
-                                title={image.title} />
-                        ))}
-                    </div>
+                    
                 </div>
-
+                    {/* rajouter un block pour les mossisures et champignons / pigeons */}
             </div>
 
 
             {/* fiche de contact 
             
             Pas beau, quelques points à améliorer :
-            -Le message avec les deux points : trouver un moyen de rendre ça plus beau
-            -
+            - Le message avec les deux points : trouver un moyen de rendre ça plus beau
+            - plus gros
+            - rajouter "diagnostic et devis gratuit"
+            - Rajouter "intervention dans toute l'IDF"
             */}
 
             <div className='contact'>

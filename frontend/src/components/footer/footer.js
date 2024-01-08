@@ -2,6 +2,8 @@
 // fiche contact
 // logo
 // btn de retour en haut de page
+// mettre un logo "7j/7"
+// Logo ou précision "service garanti" option étoile
 
 function footer(){
     return (
