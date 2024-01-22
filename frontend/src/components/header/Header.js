@@ -7,7 +7,7 @@ import Logo3 from '../../Style/images/logo_neutalise_3.png';
 function Header() {
     return (
         <div className="Header container">
-            <header className="d-flex align-items-center justify-content-center justify-content-lg-start">
+            <header className="d-flex align-items-center justify-content-around">
                 {/* ajouter le logo "certi biocide" */}
                 <div className="title">
                     <img src={Logo3} alt="Logo anti nuisible" className="logo_principal"></img>

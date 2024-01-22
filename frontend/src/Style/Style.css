@@ -20,9 +20,6 @@ header{
 
 .home{
     background-color: orange;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 /* cards */
@@ -33,21 +30,5 @@ header{
 }
 
 .insect-cards-area{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: rgb(182, 87, 87);
-}
-
-.first-row,.second-row{
-    display: flex;
-}
-
-.contact-title{
-    display: flex;
-    justify-content: center;
-}
-
-.bloc-image{
-    margin-left: 5px;
 }

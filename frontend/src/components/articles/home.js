@@ -57,10 +57,10 @@ function Home() {
     const secondRow = imagesData.slice(3, 6);
 
     return (
-        <div className='home'>
+        <div className='home container d-flex flex-column justify-content-center align-items-center'>
 
             {/* Présentation des services avec images des insectes traités */}
-            <div className='insectes'>
+            <div className='insectes d-flex flex-column justify-content-center align-items-center'>
                 <h2>Nous luttons contre :</h2>
                 {/* Cards des insectes 
                     Faire les liaisons avec les balises React (Router, link, etc)
@@ -71,7 +71,7 @@ function Home() {
                     clik redirect -> vers une description de la bestiole
                 */}
                 <div className='insect-cards-area'>
-                <div className='second-row'>
+                <div className='second-row d-flex'>
                         {secondRow.map((image) => (
                             <ImageWithTitle
                                 key={image.id}
@@ -81,7 +81,7 @@ function Home() {
                         ))}
                     </div>
 
-                    <div className='first-row'>
+                    <div className='first-row d-flex'>
                         {firstRow.map((image) => (
                             <ImageWithTitle
                                 key={image.id}
