@@ -10,7 +10,7 @@ function Header() {
             <header className="d-flex align-items-center justify-content-center justify-content-lg-start">
                 {/* ajouter le logo "certi biocide" */}
                 <div className="title">
-                    <img src={Logo2} alt="Logo anti nuisible" className="logo_principal"></img>
+                    <img src={Logo3} alt="Logo anti nuisible" className="logo_principal"></img>
                     <p>Professionnel anti nuisible</p>
                 </div>
                 <div className='menu-list'>
