@@ -7,6 +7,10 @@ header{
     align-items: center;
 }
 
+.logo_principal{
+    max-width: 12rem;
+}
+
 .menu-list-components{
     display: flex;
     padding: 0;
@@ -26,8 +30,8 @@ header{
 
 /* cards */
 .insect-cards-img {
-    width: auto;
-    height: 150px;
+    width: 100%;
+    height: auto;
     max-height: 155px;
 }
 

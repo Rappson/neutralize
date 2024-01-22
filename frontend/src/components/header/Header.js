@@ -1,11 +1,18 @@
-import '../../Style/Style.css'
+import '../../Style/Style.css';
+
+import Logo from '../../Style/images/logo_neutalise_1.png';
+import Logo2 from '../../Style/images/logo_neutalise_2.png';
+import Logo3 from '../../Style/images/logo_neutalise_3.png';
 
 function Header() {
-    return(
-        <div className="Header">
-            <header>
+    return (
+        <div className="Header container">
+            <header className="d-flex align-items-center justify-content-center justify-content-lg-start">
                 {/* ajouter le logo "certi biocide" */}
-                <h1 className="title">Neutralise</h1>
+                <div className="title">
+                    <img src={Logo2} alt="Logo anti nuisible" className="logo_principal"></img>
+                    <p>Professionnel anti nuisible</p>
+                </div>
                 <div className='menu-list'>
                     <ul className='menu-list-components'>
                         <ol>Accueil</ol>
