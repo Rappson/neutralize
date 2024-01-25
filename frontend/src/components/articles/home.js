@@ -102,7 +102,7 @@ function Home() {
             - Le message avec les deux points : trouver un moyen de rendre ça plus beau
             - plus gros
             - rajouter "diagnostic et devis gratuit"
-            - Rajouter "intervention dans toute l'IDF"
+            - Rajouter "intervention dans toute l'IDF et Champagne Ardenne"
             */}
 
             <div className='contact'>

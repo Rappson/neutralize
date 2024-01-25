@@ -19,14 +19,19 @@ header{
     padding-right: 15px;
 }
 
+.btn-components{
+    margin-right: 5px;
+}
+
+/* home */
 .home{
     background-color: orange;
 }
 
-/* cards */
 .insect-cards-img {
-    width: 100%;
-    height: auto;
+    max-width: 15rem;
+    width: 90%;
+    height: 75%;
     max-height: 155px;
 }
 
