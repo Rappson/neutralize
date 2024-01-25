@@ -1,4 +1,7 @@
-
+.container{
+    padding-left: 0;
+    padding-right: 0;
+}
 
 header{
     background-color: bisque;
@@ -9,12 +12,10 @@ header{
 }
 
 .menu-list-components{
-    display: flex;
-    padding: 0;
+    display: flex;;
 }
 
 .menu-list-components, ol{
-    padding: 0;
     padding-right: 15px;
 }
 
