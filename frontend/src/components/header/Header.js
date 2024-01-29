@@ -22,7 +22,7 @@ function Header() {
                 </div>
 
                 {/* dropdown Mobile only */}
-                <ol className="nav-item dropdown">
+                {/* <ol className="nav-item dropdown">
                     <a className="nav-link dropdown-toggle"
                         href="#"
                         id="navbarDropdown"
@@ -38,7 +38,7 @@ function Header() {
                         <div className="dropdown-divider"></div>
                         <a className="dropdown-item" href="#">Something else here</a>
                     </div>
-                </ol>
+                </ol> */}
 
             </header>
         </div>

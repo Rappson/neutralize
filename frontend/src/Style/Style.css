@@ -38,3 +38,16 @@ header{
 .insect-cards-area{
     background-color: rgb(182, 87, 87);
 }
+
+
+/* FOOTER */
+.footer{
+    background-color: blueviolet;
+}
+.logo_container{
+    max-width: 10rem;
+}
+
+.footer_logo{
+    width: 100%;
+}
