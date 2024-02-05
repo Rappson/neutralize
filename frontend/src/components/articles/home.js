@@ -15,40 +15,41 @@ function Home() {
     const imagesData = [
         {
             id: 1,
-            imageUrl: cafards,
-            altText: "Photo d'un cafard",
-            title: "Les carfards"
+            imageUrl: souris,
+            altText: "Photo d'une souris",
+            title: "Les souris / Rats"
         },
         {
             id: 2,
-            imageUrl: chenilles,
-            altText: "Photo d'une chenille",
-            title: "Les chenilles"
-        },
-        {
-            id: 3,
-            imageUrl: fourmis,
-            altText: "Photo d'une fourmis",
-            title: "Les fourmis"
-        },
-        {
-            id: 4,
             imageUrl: guepes,
             altText: "Photo d'une guêpe",
             title: "Les guêpes"
         },
         {
-            id: 5,
+            id: 3,
             imageUrl: punaises,
             altText: "Photo d'une punaise",
             title: "Les punaises"
         },
         {
+            id: 4,
+            imageUrl: cafards,
+            altText: "Photo d'un cafard",
+            title: "Les carfards"
+        },
+        {
+            id: 5,
+            imageUrl: chenilles,
+            altText: "Photo d'une chenille",
+            title: "Les chenilles"
+        },
+        {
             id: 6,
-            imageUrl: souris,
-            altText: "Photo d'une souris",
-            title: "Les souris / Rats"
-        }
+            imageUrl: fourmis,
+            altText: "Photo d'une fourmis",
+            title: "Les fourmis"
+        },
+        
 
     ]
 
@@ -72,7 +73,7 @@ function Home() {
                 */}
                 <div className='insect-cards-area'>
                 <div className='second-row d-flex'>
-                        {secondRow.map((image) => (
+                        {firstRow.map((image) => (
                             <ImageWithTitle
                                 key={image.id}
                                 imageUrl={image.imageUrl}
@@ -82,7 +83,7 @@ function Home() {
                     </div>
 
                     <div className='first-row d-flex'>
-                        {firstRow.map((image) => (
+                        {secondRow.map((image) => (
                             <ImageWithTitle
                                 key={image.id}
                                 imageUrl={image.imageUrl}
