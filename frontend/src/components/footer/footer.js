@@ -21,7 +21,7 @@ function footer() {
                 <img className="footer_logo img" src={Logo} alt="logo 'Neutralise'"></img>
             </div>
 
-            <div className="contact_container">
+            <div className="footer_contact_container">
                 <p>Mon mail</p>
                 <p>tel</p>
                 <p>adresse</p>

@@ -39,6 +39,18 @@ header{
     background-color: rgb(182, 87, 87);
 }
 
+.contact_container{
+    background-color: green;
+}
+
+        /* partners */
+.partner_container{
+    background-color: aqua;
+}
+
+.Partners_logo{
+    width: 100%;
+}
 
 /* FOOTER */
 .footer{

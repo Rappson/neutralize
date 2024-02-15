@@ -3,12 +3,16 @@ import ReactDOM from 'react-dom/client';
 import Header from './components/header/Header';
 import Home from './components/articles/home';
 import Footer from './components/footer/footer.js'
+import Partner from './components/articles/partner.js';
+import ContactUs from './components/articles/contactUs.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Header />
     <Home />
+    <ContactUs />
+    <Partner />
     <Footer />
   </React.StrictMode>
 );
