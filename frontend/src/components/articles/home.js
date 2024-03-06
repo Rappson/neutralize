@@ -1,5 +1,7 @@
 import '../../Style/Style.css'
 import ImageWithTitle from './imageWithTitle'
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+
 
 // Les images
 import cafards from '../../Style/images/Cafard.jpg'
@@ -53,17 +55,20 @@ function Home() {
 
     ]
 
+    // le lien
+    const linkToCommonPage = "https://react.dev/reference/react/useContext";
+
     // division du tableau en rangée
     const firstRow = imagesData.slice(0, 3);
     const secondRow = imagesData.slice(3, 6);
 
     return (
         <div className='home container d-flex flex-column justify-content-center align-items-center'>
-
-            {/* Présentation des services avec images des insectes traités */}
-            <div className='insectes d-flex flex-column justify-content-center align-items-center'>
-                <h2>Nous luttons contre :</h2>
-                {/* Cards des insectes 
+            <Router>
+                {/* Présentation des services avec images des insectes traités */}
+                <div className='insectes d-flex flex-column justify-content-center align-items-center'>
+                    <h2>Nous luttons contre :</h2>
+                    {/* Cards des insectes 
                     Faire les liaisons avec les balises React (Router, link, etc)
 
                     3 premiers :  rats souris / guêpes frelons / punaises 
@@ -71,30 +76,35 @@ function Home() {
 
                     clik redirect -> vers une description de la bestiole
                 */}
-                <div className='insect-cards-area'>
-                    <div className='second-row d-flex justify-content-around'>
-                        {firstRow.map((image) => (
-                            <ImageWithTitle
-                                key={image.id}
-                                imageUrl={image.imageUrl}
-                                altText={image.altText}
-                                title={image.title} />
-                        ))}
-                    </div>
+                    <div className='insect-cards-area'>
+                        <div className='second-row d-flex justify-content-around'>
+                            {firstRow.map((image) => (
+                                <Link key={image.id} to={linkToCommonPage} className='image-link'>
+                                <ImageWithTitle
+                                    key={image.id}
+                                    imageUrl={image.imageUrl}
+                                    altText={image.altText}
+                                    title={image.title}/>
+                                </Link>
+                            ))}
+                        </div>
 
-                    <div className='first-row d-flex justify-content-around'>
-                        {secondRow.map((image) => (
-                            <ImageWithTitle
-                                key={image.id}
-                                imageUrl={image.imageUrl}
-                                altText={image.altText}
-                                title={image.title} />
-                        ))}
-                    </div>
+                        <div className='first-row d-flex justify-content-around'>
+                            {secondRow.map((image) => (
+                                <Link key={image.id} to={linkToCommonPage} className='image-link'>
+                                    <ImageWithTitle
+                                        key={image.id}
+                                        imageUrl={image.imageUrl}
+                                        altText={image.altText}
+                                        title={image.title} />
+                                </Link>
+                            ))}
+                        </div>
 
+                    </div>
+                    {/* rajouter un block pour les mossisures et champignons / pigeons */}
                 </div>
-                {/* rajouter un block pour les mossisures et champignons / pigeons */}
-            </div>
+            </Router>
         </div>
     )
 }

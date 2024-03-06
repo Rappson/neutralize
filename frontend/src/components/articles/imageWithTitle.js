@@ -1,3 +1,5 @@
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+
 import '../../Style/Style.css'
 
 
@@ -8,6 +10,7 @@ function ImageWithTitle(props) {
             <img src={imageUrl} alt={altText} className='insect-cards-img'></img>
             <h4 className='insect-title'>{title}</h4>
         </div>
+
     )
 }
 
