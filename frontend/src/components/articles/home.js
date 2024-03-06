@@ -49,7 +49,7 @@ function Home() {
             altText: "Photo d'une fourmis",
             title: "Les fourmis"
         },
-        
+
 
     ]
 
@@ -72,7 +72,7 @@ function Home() {
                     clik redirect -> vers une description de la bestiole
                 */}
                 <div className='insect-cards-area'>
-                <div className='second-row d-flex'>
+                    <div className='second-row d-flex justify-content-around'>
                         {firstRow.map((image) => (
                             <ImageWithTitle
                                 key={image.id}
@@ -82,7 +82,7 @@ function Home() {
                         ))}
                     </div>
 
-                    <div className='first-row d-flex'>
+                    <div className='first-row d-flex justify-content-around'>
                         {secondRow.map((image) => (
                             <ImageWithTitle
                                 key={image.id}
@@ -91,9 +91,9 @@ function Home() {
                                 title={image.title} />
                         ))}
                     </div>
-                    
+
                 </div>
-                    {/* rajouter un block pour les mossisures et champignons / pigeons */}
+                {/* rajouter un block pour les mossisures et champignons / pigeons */}
             </div>
         </div>
     )

@@ -1,6 +1,9 @@
 import '../../Style/Style.css';
 
 function ContactUs() {
+    const adrEmail = "contact@neutralise.fr"
+    const phone = "07 45 08 04 58"
+    
     return (
         <div className='contact_container container d-flex justify-content-center'>
             {/* fiche de contact 
@@ -21,8 +24,8 @@ function ContactUs() {
                 {/* cards de contacts */}
                 <div className='contact-cards'>
 
-                    <p className='mobile'>Téléphone : <a href='#'>06 12 34 56 78</a></p>
-                    <p className='mail'>E-mail : <a href="#">votre.mail@exemple.com</a></p>
+                    <p className='mobile'>Téléphone : <a href={`tel:${phone}`}>{phone}</a></p>
+                    <p className='mail'>E-mail : <a href={`mailto:${adrEmail}`}>{adrEmail}</a></p>
                 </div>
             </div>
         </div>
