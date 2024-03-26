@@ -4,6 +4,9 @@ import Logo from '../../Style/images/logo_neutalise_1.png'; //logo
 import Logo2 from '../../Style/images/logo_neutalise_2.png'; // fond jaune ecriture noir
 import Logo3 from '../../Style/images/logo_neutalise_3.png';// fond noir ecriture jaune
 
+// CERTI BIOCIDE
+import biocide from '../../Style/images/CertiBiocide.png'
+
 //PARTENAIRES
 
 
@@ -22,14 +25,14 @@ function footer() {
             </div>
 
             <div className="footer_contact_container">
-                <p>Mon mail</p>
-                <p>tel</p>
+                <p>contact@neutralise.fr</p>
+                <p>07 45 08 04 58</p>
                 <p>adresse</p>
             </div>
 
         
             <div className="partenaires">
-                <h2>partenaires</h2>
+                <h2>Partenaires</h2>
             </div>
         </div>
     )

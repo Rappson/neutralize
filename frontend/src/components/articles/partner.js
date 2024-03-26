@@ -1,5 +1,5 @@
 import '../../Style/Style.css';
-import biocide from '../../Style/images/Partners/CertiBiocide.png';
+import biocide from '../../Style/images/CertiBiocide.png';
 import ferme from '../../Style/images/Partners/FermeSaclay.png';
 import foodAsia from '../../Style/images/Partners/FoodAsia.png';
 import parisSaclay from '../../Style/images/Partners/ParisSaclay.png';
@@ -10,9 +10,6 @@ function Partner() {
         <div className='partner_container container d-flex flex-column align-items-center'>
             <h2>Nos partenaires</h2>
             <ul className='img_partners_area d-flex flex-row align-items-center'>
-                <ol className="biocide">
-                    <img src={biocide} alt='cerification agrée certibiocide' className="Partners_logo"></img>
-                </ol>
                 <ol className="ferme">
                     <img src={ferme} alt='logo de partenaire : ferme de Saclay' className="Partners_logo"></img>
                 </ol>

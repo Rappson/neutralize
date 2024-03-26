@@ -25,7 +25,7 @@ function Home() {
             id: 2,
             imageUrl: guepes,
             altText: "Photo d'une guêpe",
-            title: "Les guêpes"
+            title: "Les guêpes / frelon"
         },
         {
             id: 3,
@@ -49,8 +49,8 @@ function Home() {
             id: 6,
             imageUrl: fourmis,
             altText: "Photo d'une fourmis",
-            title: "Les fourmis"
-        },
+            title: "Autres insectes"
+        }
 
 
     ]
@@ -76,20 +76,20 @@ function Home() {
 
                     clik redirect -> vers une description de la bestiole
                 */}
-                    <div className='insect-cards-area'>
-                        <div className='second-row d-flex justify-content-around'>
+                    <div className='insect-cards-area d-flex flex-column'>
+                        <div className='second-row d-flex flex-row justify-content-around'>
                             {firstRow.map((image) => (
                                 <Link key={image.id} to={linkToCommonPage} className='image-link'>
-                                <ImageWithTitle
-                                    key={image.id}
-                                    imageUrl={image.imageUrl}
-                                    altText={image.altText}
-                                    title={image.title}/>
+                                    <ImageWithTitle
+                                        key={image.id}
+                                        imageUrl={image.imageUrl}
+                                        altText={image.altText}
+                                        title={image.title} />
                                 </Link>
                             ))}
                         </div>
 
-                        <div className='first-row d-flex justify-content-around'>
+                        <div className='first-row d-flex flex-row justify-content-around'>
                             {secondRow.map((image) => (
                                 <Link key={image.id} to={linkToCommonPage} className='image-link'>
                                     <ImageWithTitle
